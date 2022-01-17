@@ -9,6 +9,7 @@ const app = express();
 //middlewares
 app.use(express.json());
 app.use(fileUpload());
+app.use(express.static("uploads"));
 app.use("/api/v1/users", users);
 // connect to the mongodb
 
